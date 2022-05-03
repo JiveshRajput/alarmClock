@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+}
+
+.container {
+    text-align: center;
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+    padding: 20px 20px 40px 20px;
+    box-shadow: 2px 3px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+    margin: 0px;
+    font-size: 36px;
+}
+
+#heading {
+    padding: 15px;
+    background: linear-gradient(to right, #00c9ff, #92fe9d);
+    border-radius: 22px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+#clock {
+    margin: 50px 0px;
+    font-size: 100px;
+}
+
+#alarmInput{
+    margin: auto;
+    display: block;
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#alarmInput > p{
+    font-size: 22px;
+    margin: 0px 0px 15px 0px;
+}
+
+#alarmNotifcation{
+    margin: 10px 0px;
+}
+
+.inputType{
+    border: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right, #00c9ff, #92fe9d);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+    color: white;
+    transition: all 0.2s ease-in 0s;
+    transform: scale(1.1);
+}
+
+#alarmDataSubmitBtn{
+    margin: 20px 0px 10 px 0px;
+    padding: 10px 40%;
+}
+
+#setAlarmBtn{
+    border-radius: 50px;
+    padding: 20px 21px;
+}
+
+#setAlarmBtn:hover{
+    border-radius: 50px;
+    padding: 20px 21px;
+    transform: scale(1);
+    transition: all 0.3s ease-in 0s;
+}
+
+#setAlarmText{
+    transition: all 0.3s ease-in 0s;
+    animation: textDesign 0.3s ease-in 0s 1 normal;
+    z-index: 1;
+}
+
+@keyframes textDesign {
+    0% {
+        transform: translateX(-50px);
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        transform: translateX(0px);
+        visibility: visible;
+    }
+}
+
+.material-icons.md-24 {
+     font-size: 36px;
+     margin: 10px; 
+     z-index: 3;
+     
+}
+
+#alarmNotifcation{
+    font-style: italic;
+    font-size: 18px;
+}
+
